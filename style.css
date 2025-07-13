@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    filter: brightness(0.6);
+    filter: brightness(0.5);
     z-index: -1;
 }
 .hero .bg-imag img
@@ -80,6 +80,15 @@
     justify-content: space-between;
     gap: 10px;
 }
+.check
+{
+    padding-top: 4rem;
+}
+label
+{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: var(--font--m);
+}
 .head3
 {
     font-family: "Noto Kufi Arabic", sans-serif;
@@ -105,14 +114,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: wheat;
-    padding-top: 1rem;
+    background-color: rgba(71, 238, 224, 0.521);
+    padding-top: 2rem;
     height: 300px;
     gap: 10px;
 }
 .father
 {
-    background-color: #2a2b7b;
+    background-color: rgba(168, 196, 67, 0.411);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +129,8 @@
     padding: 2rem 4rem;
     gap: 10px;
     border-radius: 5px;
+    /* height: 400px; */
+    text-align: center;
 }
 .ne-card .father .ne-text1
 {
@@ -147,4 +158,115 @@
     color: white;
     background-color: rgba(231, 231, 231, 0.733);
     /* padding-top: 1rem; */
+}
+.father1
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem 4rem;
+    gap: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.father1 .paraga
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.father1 .paraga .ne-text2
+{
+    color: gray;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: bold;
+    font-size: var(--font--m);
+}
+.head5
+{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: bold;
+    color: #2a2b7b;
+}
+.midd
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+.midd .bg-img1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(0.7);
+}
+.midd .bg-img1 img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.number
+{
+    text-align: center;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: var(--font--l);
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width : 768px) {
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        overflow: hidden;
+        align-items: center;
+    }
+    .imge img
+    {
+        width: 550px;
+        height: 450px;
+        padding-top: 1rem;
+        }
+    .ne-card
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 850px;
+    }
+    .father
+    {
+        height: 350px;
+        width: 250px;
+    }
+    .father1
+    {
+        height: 350px;
+        width: 250px;
+    }
+    .midd
+    {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+    }
 }
