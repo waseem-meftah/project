@@ -4,6 +4,7 @@
     --font--s:15px;
     --font--m:20px;
     --font--l:30px;
+    /* --#{$prefix}card-group-margin: #{$card-group-margin}; */
 }
 .hero
 {
@@ -88,6 +89,7 @@ label
 {
     font-family: "Noto Kufi Arabic", sans-serif;
     font-size: var(--font--m);
+    padding-right: 5px;
 }
 .head3
 {
@@ -221,10 +223,77 @@ label
 {
     text-align: center;
     font-family: "Noto Kufi Arabic", sans-serif;
-    font-size: var(--font--l);
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: bolder;
     color: white;
 }
+.rate
+{
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+}
+.rate .middle
+{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: bold;
+    font-size: var(--font--l);
+    padding-bottom: 3rem;
+    color: #2a2b7b;
+}
+.rate .rateing
+{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: bold;
+    font-size: var(--font--m);
+    color: #223654;
+    padding-bottom: 2rem;
+}
+.rate .what
+{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: bold;
+    font-size: var(--font--m);
+    color: gray;
+    width: 400px;
+    border-right: 2px solid salmon;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.rate  img
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: right;
+    margin-top: 7%;
+    margin-right: 40%;
+    position: absolute;
+}
+.like
+{
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: bold;
+    font-size: var(--font--m);
+    color: grey;
+}
+.headin
+{
+    text-align: center;
+    padding-top: 2rem;
+    position: relative;
+    top: 30px;
+    font-family: Noto Kufi Arabic, sans-serif;
+    font-weight: bold;
+    font-size: var(--font--l);
+    color: #223654;
+}
+
+
 
 
 
@@ -268,5 +337,6 @@ label
         display: flex;
         flex-direction: column;
         height: 550px;
+        /* padding-bottom: 2rem; */
     }
 }
